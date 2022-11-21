@@ -14,9 +14,12 @@ const Gallery = () => {
   const renderImages = () => {
     return imageKeys.map((item, index) => {
       return (
-        <div>
-          <img src={`${url}${item}`} alt={item} key={index}/>
-        </div>
+        <img
+          src={`${url}${item}`}
+          alt={item}
+          key={index}
+          className="img-square"
+        />
       );
     });
   };
@@ -26,8 +29,8 @@ const Gallery = () => {
   }, []);
 
   return (
-    <div>
-      <ul>{renderImages()}</ul>
+    <div className='img-grid'>
+      {renderImages()}
     </div>
   );
 };

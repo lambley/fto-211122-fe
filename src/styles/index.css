@@ -1,0 +1,13 @@
+.img-square {
+  width: 100px;
+  height: auto;
+  margin: 8px 16px
+}
+
+.img-grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
