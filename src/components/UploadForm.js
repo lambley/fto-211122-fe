@@ -14,7 +14,13 @@ const UploadForm = () => {
     <div>
       <h1>Upload Image below</h1>
       <Form onChange={(e) => handleChange(e)}>
-        <img src={image} alt="" className="img-preview" />
+        {image && (
+          <div>
+            <h5>image preview</h5>
+            <img src={image} alt="" className="img-preview" />
+          </div>
+        )}
+
         <Form.Group>
           <Form.Control type="file" name="myImage"></Form.Control>
           <Button type="submit">Submit</Button>

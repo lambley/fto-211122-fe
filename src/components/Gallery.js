@@ -30,7 +30,12 @@ const Gallery = () => {
     getImages();
   }, []);
 
-  return <div className="img-grid">{renderImages()}</div>;
+  return (
+    <div>
+      <h3 className="text-center">Currently uploaded images</h3>
+      <div className="img-grid">{renderImages()}</div>
+    </div>
+  );
 };
 
 export default Gallery;
