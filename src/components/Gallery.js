@@ -15,7 +15,7 @@ const Gallery = () => {
     return imageKeys.map((item, index) => {
       return (
         <div>
-          <img src={`${url}${item}`} alt="" key={index}/>
+          <img src={`${url}${item}`} alt={item} key={index}/>
         </div>
       );
     });
