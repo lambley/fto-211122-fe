@@ -16,6 +16,18 @@
   height: 3rem;
 }
 
+.img-preview-wrapper {
+  background-color: #8080806e;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 8px;
+  margin-top: 16px;
+  padding: 8px 0px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 4px 2px #00000014;
+}
+
 .text-center {
   width: 90%;
   margin-left: auto;
